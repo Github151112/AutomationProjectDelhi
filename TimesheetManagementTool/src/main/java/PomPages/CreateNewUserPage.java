@@ -56,13 +56,9 @@ public class CreateNewUserPage extends BaseClass {
 	public void createNewUser(String username, String password, String firstName, String lastName)
 			throws InterruptedException {
 		usernameTextField.sendKeys(username);
-		Thread.sleep(5000);
 		passwordTextField.sendKeys(password);
-		Thread.sleep(5000);
 		confirmPassword.sendKeys(password);
-		Thread.sleep(5000);
 		firstNameTextField.sendKeys(firstName);
-		Thread.sleep(5000);
 		lastNameTextField.sendKeys(lastName);
 	}
 

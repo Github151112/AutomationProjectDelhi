@@ -14,6 +14,14 @@ public class HomePage extends BaseClass{
 	//idenitfy user link
 	@FindBy(xpath = "//a[@class='content users']")
 	private WebElement usersLink;
+	
+	@FindBy(xpath = "//a[@class='content tasks']")
+	private WebElement tasksLink;
+
+	public WebElement getTasksLink() {
+		return tasksLink;
+	}
+
 
 	public WebElement getUsersLink() {
 		return usersLink;
@@ -23,6 +31,11 @@ public class HomePage extends BaseClass{
 	public void clickOnUserLink()
 	{
 		usersLink.click();
+	}
+	
+	public void clickOnTaskLink()
+	{
+		tasksLink.click();
 	}
 	
 
