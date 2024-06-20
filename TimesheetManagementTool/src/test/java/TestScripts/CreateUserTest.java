@@ -3,9 +3,11 @@ package TestScripts;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import GenericLib.BaseTest;
+import GenericLib.CustomListener;
 import GenericLib.Flib;
 import GenericLib.WorkLib;
 import PomPages.CreateNewUserPage;
@@ -13,9 +15,10 @@ import PomPages.HomePage;
 import PomPages.LoginPage;
 import PomPages.UserListPage;
 
+@Listeners(CustomListener.class)
 public class CreateUserTest extends BaseTest {
 
-	@Test
+	@Test(groups = "RT")
 	public void createUser() throws EncryptedDocumentException, IOException, InterruptedException {
 
 		// login

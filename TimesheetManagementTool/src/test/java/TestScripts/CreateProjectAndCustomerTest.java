@@ -16,7 +16,7 @@ import PomPages.openTaskPage;
 
 public class CreateProjectAndCustomerTest extends BaseTest {
 
-	@Test
+	@Test(groups = "RT")
 	public void createCustomerAndProject() throws EncryptedDocumentException, IOException {
 		// login
 		Flib lib = new Flib();

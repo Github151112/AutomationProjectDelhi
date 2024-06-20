@@ -12,7 +12,7 @@ public class LoginPage extends BaseClass {
 	}
 
 	// userNameText field
-	@FindBy(name = "username")
+	@FindBy(name = "usern")
 	private WebElement usernameTextField;
 
 	@FindBy(name = "pwd")

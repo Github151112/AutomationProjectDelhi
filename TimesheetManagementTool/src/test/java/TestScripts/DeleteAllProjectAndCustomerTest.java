@@ -14,7 +14,8 @@ import PomPages.openTaskPage;
 
 public class DeleteAllProjectAndCustomerTest extends BaseTest {
 
-	@Test
+	@Test(groups = {"RT","IT"})
+	
 	public void deleteCustomerAndProject() throws EncryptedDocumentException, IOException {
 
 		// login

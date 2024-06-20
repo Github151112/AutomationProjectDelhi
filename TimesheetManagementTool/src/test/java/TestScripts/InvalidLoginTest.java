@@ -12,7 +12,7 @@ import PomPages.LoginPage;
 
 public class InvalidLoginTest extends BaseTest {
 
-	@Test
+	@Test(groups = "FT")
 	public void invalidLogin() throws EncryptedDocumentException, IOException {
 		Flib lib = new Flib();
 		LoginPage lp = new LoginPage(driver);
